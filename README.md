@@ -1,205 +1,124 @@
-# template
+# pilocytic-astrocytoma
 
-**template for pathology atlas repositories**
+**pilocytic-astrocytoma for pathology atlas repositories**
 
-```         
-see [make-html-WSI](https://github.com/pathologyatlas/make-html-WSI) for more information and [TODO](https://github.com/pathologyatlas/TODO) to add cases
+
+```yaml
+- stainname: pilocytic-astrocytoma-HE
+  reponame: pilocytic-astrocytoma
+  titleTR: pilositik astrositom
+  titleEN: pilocytic astrocytoma
+  organTR: retroorbital
+  organEN: retroorbital
+  speciality: neuropathology
+  type: published
+  author:
+  - Serdar Balci
+  - Memorial Patoloji
+  date: 2024-03-05
+  url: https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html
+  note: ''
+  categoriesTR:
+  - pilositik astrositom
+  - glial tümör
+  - pediatrik
+  - patoloji
+  - atlas
+  - histopatoloji
+  - whole slide image
+  categoriesEN:
+  - pilocytic astrocytoma
+  - glial tumor
+  - pediatric
+  - pathology
+  - atlas
+  - histopathology
+  - whole slide image
+  screenshot: https://www.patolojiatlasi.com/screenshots/thumbnail_pilocytic-astrocytoma-HE.png
+  github: https:///github.com/pathologyatlas/pilocytic-astrocytoma
+  githubpage: https://pathologyatlas.github.io/pilocytic-astrocytoma
+  youtube: ''
 ```
 
-```         
-In this README file replace the following:
-TemplateEN with description of file in English
-TemplateTR with description of file in Turkish
-template with repository name
-```
 
-```         
-update html file <head>
+[https://images.patolojiatlasi.com/pilocytic-astrocytoma/](https://images.patolojiatlasi.com/pilocytic-astrocytoma/)
 
-<title>TemplateEN templateTR</title>
-
-<meta name="keywords" content="TemplateEN, templateTR, patoloji, atlas, pathology, whole slide image">
-
-<meta name="description" content="TemplateEN templateTR">
-```
-
-``` zsh
-
-vips dzsave HE.svs HE
-```
-
-```         
-update html file to match .dzi file
-```
-
-```         
-add to begining of qmd page
-
----
-description: |
-    TemplateEN
-    TemplateTR
-date: last-modified
-categories: [template]
-page-layout: full
-bibliography: references.bib
----
-```
-
-> consider using git_push.sh script to upload files to github, since the
-> number of generated files is huge
-
-> after upload complete, do not forget to activate github pages for the
-> new repository
-
-```{r language template, echo=FALSE, include=TRUE}
-source("./R/language.R")
-output_type <- knitr::opts_knit$get("rmarkdown.pandoc.to")
-```
-
-```{asis, echo = (language == "TR")}
-## TemplateTR {#sec-template}
-```
-
-```{asis, echo = (language == "EN")}
-## TemplateEN {#sec-template}
-```
-
-```{r template screenshot, eval=TRUE, include=FALSE}
-if (!file.exists("./screenshots/thumbnail_template.png")) {
-webshot2::webshot(
-  url = "https://images.patolojiatlasi.com/template/HE.html",
-  file = "./screenshots/thumbnail_template.png"
-)
-}
-```
-
-```{comment, echo=FALSE, include=FALSE, eval=FALSE}
-knitr::include_url(url = "https://images.patolojiatlasi.com/template/HE.html")
-```
-
-```{comment, echo=FALSE, include=FALSE, eval=FALSE}
-#| label: template_screenshot
-#| fig-cap: "TemplateTR"
-knitr::include_graphics("./screenshots/thumbnail_template.png")
-```
-
-::: {.content-hidden when-format="html"}
-TemplateTR
-:::
-
-::: {.content-visible when-format="pdf"}
-TemplateTR
-:::
-
-```{asis, echo = (language == "TR")}
-
-**templateTR**
+[https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html](https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html)
 
 
-[![Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/thumbnail_template.png){width="25%"}](https://images.patolojiatlasi.com/template/HE.html) [Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/template/HE.html)
-```
+**pilositik astrositom**
 
-```{asis, echo = ((language=="TR") & (output_type=="html"))}
+[Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html)
+
+<a href="https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html"><img alt="Tam Ekran Görmek İçin Resmi Tıklayın" src ="https://www.patolojiatlasi.com/screenshots/thumbnail_pilocytic-astrocytoma-HE.png" style="width:25%;"></a>
+
+
+
+**pilocytic astrocytoma**
+
+[Click for Full Screen WSI](https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html)
+
+<a href="https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html"><img alt="Click for Full Screen WSI" src ="https://www.patolojiatlasi.com/screenshots/thumbnail_pilocytic-astrocytoma-HE.png" style="width:25%;"></a>
+
+
+
+
+
+
+
 Mikroskopik görüntüleri inceleyin:
 
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
-
-```
-
-```{comment}
-asis, echo = (language == "TR")
-
-**templateTR**
+<iframe src="https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 
-[![İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](./screenshots/thumbnail_template.png){width="25%"}](https://images.patolojiatlasi.com/template/HE_annotated.html) [İşaretlenmiş mikroskopik görüntüleri Tam Ekran Görmek İçin Resmi Tıklayın](https://images.patolojiatlasi.com/template/HE_annotated.html)
-```
+See Microscopy with viewer:
 
-```{comment}
-asis, echo = ((language=="TR") & (output_type=="html"))
-
-İşaretlenmiş mikroskopik görüntüleri inceleyin:
-
-<iframe src="https://images.patolojiatlasi.com/template/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
-
-```
-
-```{comment}
-asis, echo = (language == "TR")
-
-
-::: {.callout-tip collapse="true" appearance="default" icon="true"}
-### Tanı için tıklayın
-
-{{TemplateTR}}
-
-:::
+<iframe src="https://images.patolojiatlasi.com/pilocytic-astrocytoma/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
 
 
 
-```
-
-```{asis, echo = (language == "EN")}
-
-**templateEN**
-
-[![Click for Full Screen WSI](./screenshots/thumbnail_template.png){width="25%"}](https://images.patolojiatlasi.com/template/HE.html) [Click for Full Screen WSI](https://images.patolojiatlasi.com/template/HE.html)
-
-
-```
-
-```{asis, echo = ((language == "EN") & (output_type=="html"))}
-
-See Microscopy with viewer: 
-
-<iframe src="https://images.patolojiatlasi.com/template/HE.html" style="height:600px;width:100%;" data-external="1"></iframe>
-
-```
-
-```{comment}
-asis, echo = (language == "EN")
-
-**templateEN**
-
-[![Click for Full Screen Annotated WSI](./screenshots/thumbnail_template.png){width="25%"}](https://images.patolojiatlasi.com/template/HE_annotated.html) [Click for Full Screen Annotated WSI](https://images.patolojiatlasi.com/template/HE_annotated.html)
-```
-
-```{comment}
-asis, echo = ((language=="EN") & (output_type=="html"))
-
-See Annotated Microscopy with viewer: 
-
-<iframe src="https://images.patolojiatlasi.com/template/HE_annotated.html" style="height:600px;width:100%;" data-external="1"></iframe>
-
-```
-
-```{comment}
-asis, echo = (language == "EN")
-
-::: {.callout-tip collapse="true" appearance="default" icon="true"}
-### Tanı için tıklayın
-
-{{TemplateEN}}
-
-:::
 
 
 
-```
+<hr>
 
-```{asis, echo = (language == "TR")}
+<a href="https://www.patolojiatlasi.com/"><img src ="https://www.patolojiatlasi.com/images/coverTR.png" style="width:50%;"></a>
 
-[Video İçin Tıklayın](https://www.youtube.com/watch?v=)
+<a href="https://www.histopathologyatlas.com/"><img src ="https://www.patolojiatlasi.com/images/coverEN.png" style="width:50%;"></a>
 
-```
 
-```{asis, echo = (language == "EN")}
 
-[Click for Video](https://www.youtube.com/watch?v=)
+- Sosyal medyadan derlenen görüntülerden oluşan patoloji notları için [tıklayın](https://www.patolojinotlari.com/).
 
-```
+- For social media based pathology notes [click here](https://www.patolojinotlari.com/).
 
-::: {.content-visible when-format="html"}
-{{< video https://www.youtube.com/embed/ >}}
-:::
+
+<iframe width="160" height="400" src="https://leanpub.com/patolojiatlasi/embed" frameborder="0" allowtransparency="true"></iframe>
+
+
+
+<a href="https://play.google.com/store/books/details?id=um5jEAAAQBAJ&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png" style="width: 250px;"></a>
+
+
+
+
+<a href="https://books.apple.com/us/book/patoloji-atlas%C4%B1/id6456452218?itscg=30200&amp;itsct=books_box_badge&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/get-it-on-apple-books/badge/tr-tr?size=250x83&amp;releaseDate=1690848000" alt="Get it on Apple Books" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+
+
+
+
+
+
+| Atıf için (Citation)                                                                                                                                                                                                                                                                                     |
+|------------------------------------------------------------------------|
+| [![](https://zenodo.org/badge/452585667.svg)](https://zenodo.org/badge/latestdoi/452585667)                                                                                                                                                                                                              |
+| [Open Science Framework DOI: 10.17605/OSF.IO/6W5K8](https://osf.io/6w5k8/)                                                                                                                                                                                                                               |
+| [![](https://img.shields.io/github/issues/patolojiatlasi/patolojiatlasi.github.io)](https://github.com/patolojiatlasi/patolojiatlasi.github.io/issues)                                                                                                                                                   |
+| [![](https://img.shields.io/github/license/patolojiatlasi/patolojiatlasi.github.io)](https://github.com/patolojiatlasi/patolojiatlasi.github.io/blob/main/LICENSE)                                                                                                                                       |
+| <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fwww.patolojiatlasi.com%2F%20@patolojinotlari%20@serdarbalci%20"><img src="https://img.shields.io/twitter/url?label=Patoloji%20Atlas%C4%B1&amp;style=social&amp;url=https%3A%2F%2Fwww.patolojiatlasi.com%2F" alt="Twitter"/></a>    |
+| <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fwww.patolojinotlari.com%2F%20@patolojinotlari%20@serdarbalci%20"><img src="https://img.shields.io/twitter/url?label=Patoloji%20Notlar%C4%B1&amp;style=social&amp;url=https%3A%2F%2Fwww.patolojinotlari.com%2F" alt="Twitter"/></a> |
+
+
+
+
+
